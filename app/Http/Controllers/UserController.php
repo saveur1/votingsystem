@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Party;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -45,6 +46,9 @@ class UserController extends Controller
         return view("users.elections");
     }
     public function voting(){
+        $candidates = User::where("role","candidate")->get();
+        $parties = Party::all();
+        dd($candidates);
         return view("users.voting");
     }
 }
