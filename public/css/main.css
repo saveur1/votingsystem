@@ -22,7 +22,7 @@ a {
     cursor: pointer;
 }
 .info_btn{
-    padding:12px 40px;
+    padding:5px 40px;
     background-color: var(--blue);
     color: var(--white);
     border-radius: 8px;
@@ -59,6 +59,10 @@ a {
     padding:12px 40px;
     font-size:25px;
     color: var(--white);
+    margin:0 15px;
+}
+.navbar a:last-child{
+    margin-right:0px;
 }
 #home .home_content{
     position: absolute;
@@ -201,10 +205,12 @@ a {
  #registration  .registration_form {
     width:40%;
  }
- #registration  .registration_form .input_group{
+ #registration  .registration_form .input_group,
+ #registration  .registration_form .radio_group{
     margin-top:20px;
  }
  #registration  .registration_form .input_group label,
+ #registration  .registration_form .radio_group label,
  #registration  .registration_form .input_group input
  {
     display: block;
@@ -213,6 +219,22 @@ a {
     width: 100%;
     height: 33px;
  }
+ #registration  .registration_form .radio_group input {
+    margin-left:40px;
+    margin-right:8px;
+    display: inline-block;
+    width:25px;
+    height:25px;
+ }
+ #registration  .registration_form .radio_group span{
+  display:flex;
+  align-items: center;
+  display: inline-block;
+}
+#registration  .registration_form .radio_group span span{
+  display: inline-block;
+  line-height: 25px;
+}
  #registration  .registration_form .submit_butt{
     text-align: center;
     margin-top: 20px;
@@ -235,6 +257,13 @@ a {
   }
   #registration  .login_form a:hover{
     text-decoration:underline;
+  }
+  .message-register{
+    background-color: rgba(32, 72, 32, 0.9);
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+    margin:20px;
   }
   
  /*                FOOTER STYLESHEET
@@ -417,6 +446,353 @@ a {
   #voter_dashboard .navbar .collapsable_links .active{
     border-bottom: 2px solid var(--blue);
   }
+/*                         ADMIN-DASHBOARD STYLEHEET
+-------------------------------------------------------------------------
+*/
+#app {
+    display: flex;
+    width:100vw;
+    margin:0 !important;
+    background-color: #90A0B7;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* LOGO STYES */
+#menu {
+    background-color: #111827;
+    width: 300px;
+    height: 100vh;
+}
+#menu .logo{
+    display: flex;
+    align-items: center;
+    padding:0px 10px 0px 0px;
+    background-color:var(--white);
+}
+#menu .logo img{
+  width: 100%;
+}
+
+/* MENU ITEMS STYLES */
+#menu .items{
+   margin-top:30px;
+}
+
+#menu .items li{
+    list-style-type:none;
+    padding:15px 0px;
+    transition:0.3s ease;
+}
+#menu .items li:hover,
+#menu .items .active{
+    background-color:#253048;
+    cursor:pointer;
+}
+#menu .items li i{
+    color:rgb(134,141,151);
+    width:30px;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    font-size:14px;
+    margin:0px 10px 0px 25px;
+}
+#menu .items li a{
+    text-decoration:none;
+    color:rgb(134,141,151);
+    transition:0.3s ease;
+}
+#menu .items li:hover a,
+#menu .items li:hover i,
+#menu .items .active a,
+#menu .items .active i{
+    color:white;
+}
+
+#menu .items .active{
+    border-left:4px solid white;
+}
+
+/* INTERFACE STYLING*/
+/* NAVIGATION STYLING */
+
+#interface{
+    width:calc(100vw - 300px);
+}
+#interface .navigation,
+#interface .two_col_data{
+    display:flex;
+    justify-content: space-between;
+}
+#interface .two_col_data{
+  padding:0 30px;
+}
+#interface .navigation {
+  padding:15px 30px;
+  background-color: var(--dark-blue);
+  border-bottom:3px solid #594ef7;
+}
+#interface .navigation .left_container i{
+  font-size:25px;
+  color: var(--white);
+  cursor: pointer;
+  padding:5px;
+}
+
+
+/* RIGHT MENU CONTAINER*/
+.right_container{
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+}
+.right_container i{
+    margin-right:20px;
+    color:var(--white);
+    font-size:19px;
+    font-weight:400;
+}
+.right_container img{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+}
+
+.title{
+    color: var(--white);
+    padding:30px 30px 0px 30px;
+    font-size:24px;
+    font-weight:700;
+}
+#interface .two_col_data .left_col{
+  width:70%;
+}
+#interface .two_col_data .right_col{
+  width:30%;
+}
+
+.four_cards{
+    padding:20px 30px 0px 0px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    gap:20px;
+    align-items: center;
+}
+.four_cards .statistic_card{
+    background-color: #fff;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: calc(33% - 20px);
+    padding:16px 20px;
+    border-radius:5px;
+    border: 1px solid rgba(206, 201, 201,0.7);
+    min-width:200px;
+}
+
+.four_cards .statistic_card i{
+    width:60px;
+    height:60px;
+    line-height:60px;
+    text-align: center;
+    color:#fff;
+    background-color: #FF7A00;
+    margin-right:15px;
+    border-radius:50%;
+    font-size:25px;
+}
+.four_cards .statistic_card:nth-child(2) i{
+    background-color: #015FC7;
+}
+.four_cards .statistic_card:nth-child(3) i{
+    background-color: #01D0A3;
+}
+.four_cards .statistic_card:nth-child(4) i{
+    background-color: #74daec;
+}
+.four_cards .statistic_card h3{
+    font-weight:600;
+    font-size:18px;
+}
+.four_cards .statistic_card span{
+    color:#828997;
+    font-size:15px;
+}
+#interface .two_col_data .right_col .statistic_card{
+  width:100%;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:20px;
+  margin-top:20px;
+  background-image: url("/images/dash_background.svg");
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+#interface .two_col_data .right_col .statistic_card h3{
+  font-family: "Outfit", sans-serif;
+  font-size: 25px;
+}
+#interface .two_col_data .right_col .statistic_card p{
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+}
+
+/*                          CCHARTING FOR VOTING
+------------------------------------------------------------------- */
+.dashboard_charts{
+  display: flex;
+  justify-content: center;
+}
+#live_voting_result{
+  width:calc(100% - 30px);
+  background-color: var(--white);
+  margin-top:40px;
+}
+ #leading_donut{
+  margin-top:40px;
+  background-color: var(--white);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:415px;
+}
+/*                      VOTERS DASHBOARD STYLESHEET
+------------------------------------------------------------ */
+#voter_dashboard .voters_elections{
+    justify-content: flex-start !important;
+    display:block !important;
+    padding:0 !important;
+    margin-top: 20px !important;
+}
+#voter_dashboard .navbar {
+    padding: 0px;
+    margin-bottom:40px;
+}
+.voters_elections h2{
+    color: var(--white);
+    font-size:25px;
+}
+.voters_elections .election_card{
+    background-color: #C4C4C4;
+    display:flex;
+    justify-content: space-between;
+    padding:15px;
+    margin-top:20px;
+    border-radius:5px;
+}
+.voters_elections .election_card  h3{
+    font-size:20px;
+}
+.voters_elections .others{
+    margin-top:35px;
+}
+#voter_dashboard .voting_card {
+    background-color: var(--white);
+    margin-top: 15px;
+    cursor: pointer;
+    height:458px;
+    overflow:hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+#voter_dashboard .voting_card.active {
+    border:5px solid var(--blue);
+}
+#voter_dashboard .voting_card .card_header{
+    padding:10px 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid var(--lwhite);
+    height:80px;
+}
+.fold_card {
+    height:80px !important;
+}
+#voter_dashboard .voting_card .card_header .party_candidate{
+    padding:5px 20px;
+    display:flex;
+    align-items: center;
+}
+#voter_dashboard .voting_card .card_header .party_candidate img{
+    width:70px;
+    height: 70px;
+    object-fit: contain;
+}
+#voter_dashboard .voting_card .card_header .party_candidate .party_text{
+    margin-left:20px;
+}
+#voter_dashboard .voting_card .card_header input{
+    width:50px;
+    height: 50px;
+    color: var(--blue);
+}
+#voter_dashboard .voting_card .card_header i{
+    font-size:35px;
+    color: var(--blue);
+}
+#voter_dashboard .voting_card .card_header .party_candidate .party_text h3{
+    font-size:20px;
+}
+#voter_dashboard .voting_card .card_header .party_candidate .party_text h3:last-child{
+    margin-top:1px;
+    color: var(--blue);
+}
+#voter_dashboard .voting_card .card_body{
+    display:flex;
+    align-items: center;
+    padding:20px;
+    background-color: var(--lwhite);
+}
+#voter_dashboard .voting_card .card_body .image{
+    width:300px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:7px;
+    margin-right:20px;
+}
+#voter_dashboard .voting_card .card_body .image img{
+    width:300px;
+    max-width:300px;
+    border-radius:10px;
+}
+#voter_dashboard .voting_card .card_body .body_text h3{
+    font-size:25px;
+    margin-top:5px;
+    color: var(--lblack);
+}
+#voter_dashboard .voting_card .card_body .body_text h3 span{
+    color: var(--blue);
+}
+#voter_dashboard .card_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#voter_dashboard .card_footer .checkbox{
+    display: flex;
+    align-items: center;
+    margin-top:25px;
+    color: var(--white);
+    width:100%;
+}
+#voter_dashboard .card_footer .checkbox input{
+    width:20px;
+    height:20px;
+    margin-right:15px;
+}
+#voter_dashboard .card_footer input[type=submit]{
+    width:190px;
+    margin-top:15px;
+    border:none;
+}
+
  /*                          MOBILE STYLESHEET
  --------------------------------------------------------------------------
   */

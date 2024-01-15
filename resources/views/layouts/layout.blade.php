@@ -6,9 +6,12 @@
     <title>Voting System</title>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="icon" href="/images/utora_logo.png" type="image/x-icon"/>
 </head>
 <body>
+  
     @yield("content")
+
 <script type="text/javascript">
         const bars = document.querySelector("#bars");
         const collabsable = document.querySelector("#home .navbar .collapsable_links");

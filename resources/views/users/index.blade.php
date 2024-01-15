@@ -5,10 +5,9 @@
     <nav class="navbar">
         <a href="#home" id="bars"><i class="fa-solid fa-bars"></i></a>
         <div class="collapsable_links">
-            <a href="#about" class="active">Personal Infor</a>
-            <a href="#about">Elections</a>
-            <a href="/contact">Contact</a>
-            <a href="/login" class="info_btn">Vote</a>
+            <a href="#about" class="active">Profile</a>
+            <a href="/users/elections">Elections</a>
+            <a href="/voters/voting" class="info_btn">Vote</a>
         </div>
     </nav>
     <div class="project_container">
@@ -20,34 +19,39 @@
             <div class="icon_link">
                 <i class="fa-solid fa-pencil"></i>
                 <a href="/voter/edit_profile">Edit Profile</a>
-            </div>  
+            </div>
         </div>
         <div class="profile_infor">
             <div class="single_info">
                 <h4>Name:</h4>
-                <p>Servlet Biko</p>
+                <p>{{ $user->user_name }}</p>
             </div>
             <div class="single_info">
-                <h4>Father's/Mother's Name:</h4>
-                <p>Papa Biko</p>
+                <h4>Gender</h4>
+                <p>
+                    @php 
+                        $gender = $user->gender? $user->gender : "<span style='color:red'>Not Set</span>";
+                        echo $gender;
+                    @endphp
+                </p>
             </div>
             <div class="two_parts">
                 <div class="single_info">
                     <h4>Age:</h4>
-                    <p>23</p>
+                    <p>{{ $user->date_of_birth }}</p>
                 </div>
                 <div class="single_info">
                     <h4>Mobile Number:</h4>
-                    <p>+250780481590</p>
+                    <p>{{ $user->mobile_number }}</p>
                 </div>
             </div>
             <div class="single_info">
                 <h4>Email:</h4>
-                <p>bikorimanaxavier@gmail.com</p>
+                <p>{{ $user->email }}</p>
             </div>
             <div class="single_info">
                 <h4>Address:</h4>
-                <p>Kk4ave 751st, kicukiro, Kigali</p>
+                <p>{{ $user->address }}</p>
             </div>
             <div class="two_parts">
                 <div class="single_info">

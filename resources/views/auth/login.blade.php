@@ -3,6 +3,11 @@
 @section("content")
 <section id="registration" class="login_section">
     <div class="project_container">
+        @if(isset($message))
+            <div class="message-register">
+                {{ $message }}
+            </div>
+        @endif
         <div class="section_devider">
             <div class="image login_image">
                 <img src="/images/login1.svg" />

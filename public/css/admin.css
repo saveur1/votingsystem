@@ -1,0 +1,479 @@
+:root {
+    --dashblue:#064161;
+    --danger:#d9534f;
+    --success:#27a745;
+    --warning:#ffc107;
+}
+input:disabled{
+    background-color: var(--lwhite);
+}
+.app_main_content {
+    height: calc(100vh - 100px);
+    scroll-behavior: smooth;
+    overflow-y:scroll;
+}
+
+.blue_icon_button{
+    background-color: var(--dashblue);
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--white);
+    padding:9px 20px;
+    border-radius: 15px;
+}
+.blue_icon_button:hover{
+    background-color: var(--white);
+    color: var(--dashblue);
+    border:1px solid var(--lwhite);
+}
+.blue_icon_button:hover i{
+    color: var(--dashblue);
+}
+.blue_icon_button i{
+    font-size: 25px;
+    margin:0 10px 0 0;
+    color: var(--white);
+}
+
+/*               CANDIDATE HOME STYLESHEET
+-------------------------------------------------------- */
+.path_steps {
+    height:50px;
+    background-color: var(--dashblue);
+    display:flex;
+    padding:0 20px;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(232, 226, 226);
+}
+.path_steps h2{
+    font-size:24px;
+}
+.path_steps .right_path{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.path_steps .right_path h3{
+    font-size:20px;
+}
+.path_steps .right_path i{
+    font-size:20px;
+    margin:0 15px;
+}
+.path_steps .right_path h4{
+    font-size:20px;
+    color:#A5ADB8;
+}
+.multi_rows_table {
+    background-color: var(--white);
+    margin:20px;
+    min-height:50vh;
+    padding-bottom:30px;
+}
+.multi_rows_table .section_header{
+    background-color: transparent !important;
+    height: 70px;
+    border-bottom:1px solid #E6E6E6;
+}
+.multi_rows_table .section_header h2{
+    color: var(--dashblue);
+}
+#candidate_list_table{
+    margin:15px 20px 40px 20px;
+}
+.multi_rows_table .import{
+    margin-left:15px;
+    background-color: #02D8A5;
+    cursor: pointer;
+}
+.multi_rows_table .stop{
+    margin-right:15px;
+    background-color: var(--danger);
+}
+
+/*               NEW CANDIDATE STYLESHEET 
+-----------------------------------------------------*/
+.create_new_user_form{
+    display:flex;
+    justify-content: space-between;
+    padding:20px;
+}
+.elections_form{
+    justify-content: center;
+}
+.create_new_user_form .left_pannel{
+    width:30%;
+}
+.create_new_user_form .right_pannel{
+    width:68%;
+    background-color: var(--white);
+    padding:20px;
+    padding-bottom:40px;
+}
+.create_new_user_form .left_pannel .profile{
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:20px;
+}
+.create_new_user_form .left_pannel .profile img{
+    width:80%;
+}
+.create_new_user_form .left_pannel .profile .blue_icon_button{
+    margin-top:15px;
+    outline:none;
+    cursor: pointer;
+    border: 1px solid var(--lwhite);
+}
+.create_new_user_form .left_pannel .profile .blue_icon_button i{
+    font-size:18px;
+}
+.create_new_user_form .left_pannel .party_info{
+    margin-top:20px;
+    align-items: flex-start;
+}
+.create_new_user_form .left_pannel .party_info h3{
+    font-size:20px;
+    color: var(--dashblue);
+    text-align: center;
+    width:100%;
+}
+.create_new_user_form .left_pannel .party_info .party_selection{
+    width:calc(100% - 20px);
+}
+.create_new_user_form .left_pannel .party_info .party_logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    width: calc(100% - 20px);
+}
+.create_new_user_form .left_pannel .party_info .party_logo img{
+    width:60px;
+}
+.create_new_user_form .left_pannel .profile input[type=file]{
+    visibility: hidden;
+}
+.user_registration_form{
+    color: var(--dashblue);
+}
+.user_registration_form h2 {
+    font-size:25px;
+    text-align:center;
+    color: var(--dashblue);
+    margin-bottom:20px;
+}
+.user_registration_form .row_input {
+    display: flex;
+    justify-content: center;
+    margin-top:15px;
+}
+.input_group{
+    width:48%;
+    margin-left:20px;
+    display: flex;
+    flex-direction: column;
+}
+.user_registration_form .row_input .radio_group{
+    width:48%;
+    margin-left:20px;
+}
+.user_registration_form .row_input .radio_group input{
+    width:20px;
+    height: 20px;
+    margin-right:4px;
+}
+.user_registration_form .row_input .radio_group .button_group{
+    display:flex;
+    align-items: center;
+    margin-top:6px;
+}
+.user_registration_form .row_input .radio_group .button_group .radio_box:nth-child(2){
+    margin-left:40px;
+}
+.user_registration_form .row_input .radio_group .button_group .radio_box{
+    display:flex;
+    align-items: center;
+}
+.user_registration_form .row_input .radio_group .button_group .radio_box span{
+    margin-left:2px;
+}
+.input_group label,
+.input_group input,
+.create_new_user_form .left_pannel .party_info .party_selection select,
+.user_registration_form .row_input .input_group select,
+.user_registration_form .row_input .radio_group label{
+    display: block;
+}
+.input_group input,
+.create_new_user_form .left_pannel .party_info .party_selection select,
+.user_registration_form .row_input .input_group select{
+    height: 37px;
+    border:1px solid rgba(6, 65, 97,0.2);
+    outline:none;
+    margin-top:6px;
+    padding-left:6px;
+}
+.long_box{
+    width: auto;
+    margin-top:15px;
+}
+.user_registration_form .long_box input{
+    width:100%;
+}
+.user_registration_form .submit{
+    flex-direction:row;
+    justify-content: flex-end;
+}
+.long_box.submit input[type=submit]{
+    width:180px;
+    border-radius: 8px;
+    padding:10px 40px;
+    cursor: pointer;
+}
+.table_form_buttons {
+    display:flex;
+}
+.table_button {
+    padding:2px 10px;
+    color:var(--white);
+    cursor: pointer;
+    border-radius:4px;
+    border:none;
+}
+.edit_button {
+    background-color: var(--warning);
+    margin-left:5px;
+}
+.delete_button {
+    margin-left:5px;
+    background-color: var(--danger);
+}
+.view_button {
+    background-color: var(--success);
+}
+/**************************
+  Basic Modal Styles
+**************************/
+
+.modal {
+    font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+  }
+  
+  .modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:10;
+  }
+  
+  .modal__container {
+    background-color: #fff;
+    padding: 30px;
+    max-width: 740px;
+    height: 100%;
+    width: 50%;
+    border-radius: 4px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    position:relative;
+  }
+  
+  @supports (display: flex) {
+      
+      .modal__container {
+          height: initial;
+          max-height: 80vh;
+      }
+      
+  }
+  
+  .modal__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+    font-size:25px;
+  }
+  
+  .modal__content {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  
+  @supports (display: flex) {
+      
+      .modal__content {
+        margin-top: 5px;
+        margin-bottom: 2rem;
+        line-height: 1.5;
+      }
+  
+  }
+  
+  /**************************
+    Demo Animation Style
+  **************************/
+  
+  @keyframes mmfadeIn {
+      from { opacity: 0; }
+        to { opacity: 1; }
+  }
+  
+  @keyframes mmfadeOut {
+      from { opacity: 1; }
+        to { opacity: 0; }
+  }
+  
+  @keyframes mmslideIn {
+    from { transform: translateY(15%); }
+      to { transform: translateY(0); }
+  }
+  
+  @keyframes mmslideOut {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10%); }
+  }
+  
+  .micromodal-slide {
+    display: none;
+  }
+  
+  .micromodal-slide.is-open {
+    display: block;
+  }
+  
+  .micromodal-slide[aria-hidden="false"] .modal__overlay {
+    animation: mmfadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+  }
+  
+  .micromodal-slide[aria-hidden="false"] .modal__container {
+    animation: mmslideIn .3s cubic-bezier(0, 0, .2, 1);
+  }
+  
+  .micromodal-slide[aria-hidden="true"] .modal__overlay {
+    animation: mmfadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+  }
+  
+  .micromodal-slide[aria-hidden="true"] .modal__container {
+    animation: mmslideOut .3s cubic-bezier(0, 0, .2, 1);
+  }
+  
+  .micromodal-slide .modal__container,
+  .micromodal-slide .modal__overlay {
+    will-change: transform;
+  }
+  
+  /**************************
+    Custom styles for individual modals
+  **************************/
+  
+  .modal__container button {
+      outline: none;
+      cursor: pointer !important;
+  }
+  .modal__close i{
+    font-size: 25px;
+    color: var(--dashblue);
+  }
+  
+  .modal__content {
+    margin-top: 5px;
+    margin-bottom: 0.1rem;
+    line-height: 1.5;
+  }
+  
+#viewModal .profile_header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom:15px;
+    border-bottom:1px solid rgba(6, 65, 97,0.2);
+}
+#viewModal .profile_header .image img{
+    width:100%;
+    max-width: 400px;
+    border-radius:10px;
+    object-fit: cover;
+    max-height: 200px;
+}
+#viewModal .profile_header h3{
+    font-size:20px;
+    color: #585858;
+    font-weight: 300 !important;
+}
+#viewModal .modal_description{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:20px;
+}
+#viewModal .modal_description h3{
+    margin-top:10px;
+}
+#viewModal .modal_description .left_desc{
+    text-align: right;
+    width:47.5%;
+    color: var(--dashblue);
+}
+#viewModal .modal_description .right_desc{
+    width:47.5%;
+    font-weight:200;
+    color: #585858;
+    font-weight: 300 !important;
+}
+#upload_excel{
+    display: none;
+}
+
+.info_card {
+    padding:15px 50px;
+    margin:10px;
+    color:var(--white);
+    border:1px solid rgba(0,0,0,0.115);
+}
+.success {
+    background-color: var(--success);
+}
+.error {
+    background-color: var(--danger);
+}
+
+
+
+
+
+  /**************************
+    Mobile custom styles for individual modals
+  **************************/
+  
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      
+      .modal__container {
+        width: 90% !important;
+        min-width: 90% !important;
+      }
+      
+      @supports (display: flex) {
+      
+          .modal__container {
+              width: 90% !important;
+              min-width: 90% !important;
+          }
+          
+      }
+    
+  }
