@@ -53,9 +53,9 @@ $kernel->terminate($input, $status);
 exit($status);
 
 #!/usr/bin/env php
-<?php
 
-define('LARAVEL_START', microtime(true));
+
+
 
 /*
 |--------------------------------------------------------------------------
