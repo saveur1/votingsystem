@@ -6,33 +6,19 @@
     <nav class="navbar">
         <a href="#home" id="bars"><i class="fa-solid fa-bars"></i></a>
         <div class="collapsable_links">
-            <a href="#about">Profile</a>
+            <a href="/voters">Profile</a>
             <a href="/voters/elections" class="active">Elections</a>
             <a href="/voters/voting" class="info_btn">Vote</a>
         </div>
     </nav>
-    <h2>Upcoming Elections</h2>
-    <div class="election_card">
-        <h3>Presidential Elections</h3>
-        <h3>02-04-2024</h3>
-    </div>
-    <h2 class="others">Other Elections</h2>
-    <div class="election_card">
-        <h3>Presidential Elections</h3>
-        <h3>02-04-2024</h3>
-    </div>
-    <div class="election_card">
-        <h3>Presidential Elections</h3>
-        <h3>02-04-2024</h3>
-    </div>
-    <div class="election_card">
-        <h3>Presidential Elections</h3>
-        <h3>02-04-2024</h3>
-    </div>
-    <div class="election_card">
-        <h3>Presidential Elections</h3>
-        <h3>02-04-2024</h3>
-    </div>
+
+    <h2 class="others">All Elections</h2>
+    @foreach($elections as $election)
+        <div class="election_card">
+            <h3>{{ $election->positions }}</h3>
+            <h3>{{ $election->end_date }}</h3>
+        </div>
+    @endforeach
 </div>
 </section>
 @endsection

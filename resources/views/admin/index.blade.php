@@ -24,7 +24,7 @@
             <div class="statistic_card">
                 <i class="fa-solid fa-square-check"></i>
                 <div class="statistic_info">
-                    <h3>12,345</h3>
+                    <h3>{{ $voted_users }}</h3>
                     <span>Voted Users</span>
                 </div>
             </div>

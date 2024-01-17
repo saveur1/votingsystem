@@ -18,6 +18,8 @@ class AdminNewUserForm extends Component
 
     public $profile_image;
     public $party_id;
+
+    public $parties;
     public $party_logo;
     public $user_name;
     public $user_dob;
@@ -27,10 +29,12 @@ class AdminNewUserForm extends Component
     public $user_email;
     public $user_address;
     public $national_id;
+    public $candidate;
 
     public function __construct(
         $title,
         $formUrl,
+        $parties="",
         $userId="",
         $candidate="",
         $showParty=true,
@@ -39,6 +43,8 @@ class AdminNewUserForm extends Component
         $this->showParty = $showParty;
         $this->formUrl = $formUrl;
         $this->userId = $userId;
+        $this->parties = $parties;
+        $this->candidate = $candidate;
 
         $this->profile_image = $candidate!="" && $candidate["user_image"]!="" ? $candidate["user_image"]:"/images/profile_avatar.svg";
         $this->party_id =      $candidate!="" ? $candidate["party_id"]:1;

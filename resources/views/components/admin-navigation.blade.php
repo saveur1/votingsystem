@@ -4,6 +4,9 @@
     </div>
     <div class="right_container">
         <i class="fa-regular fa-bell"></i>
-        <img src="/images/saveur.jpg" alt=""/>
+        <img src="{{ Auth()->user()->user_image }}" alt="" onclick="triggerLogout()"/>
+        <div class="absolute_card">
+            <a href="/logout">Logout</a>
+        </div>
     </div>
 </div>

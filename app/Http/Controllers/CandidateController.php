@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Party;
 use App\Models\User;
 use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 use Illuminate\Http\Request;
@@ -14,7 +15,8 @@ class CandidateController extends Controller
         return view("admin.candidates.index",["candidates" => $candidates]);
     }
     public function create(){
-        return view("admin.candidates.create");
+        $parties = Party::all();
+        return view("admin.candidates.create",["parties" => $parties]);
     }
     public function store(Request $request){
         $candidate = new User();
@@ -46,7 +48,8 @@ class CandidateController extends Controller
 
     public function edit($user_id){
         $candidate = User::findOrFail($user_id);
-        return view("admin.candidates.edit", ["candidate" => $candidate]);
+        $parties = Party::all();
+        return view("admin.candidates.edit", ["candidate" => $candidate, "parties" => $parties]);
     }
 
     public function update($user_id,Request $request){

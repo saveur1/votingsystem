@@ -23,6 +23,19 @@
             else
                 collabsable.style.height = "0px";
         });
+
+        function upload_images(){
+            document.querySelector("#voter_dashboard input[type=file]").click();
+        
+            document.getElementById("upload_image").addEventListener("change",function(){
+                const reader = new FileReader();
+                reader.onload = function(event){
+                    document.querySelector("#voter_dashboard img").setAttribute("src",event.target.result);
+                };
+
+                reader.readAsDataURL(this.files[0]);
+            });
+        }
     </script>
 </body>
 </html>

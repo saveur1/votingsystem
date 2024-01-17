@@ -1,9 +1,6 @@
 <form action="{{ $formUrl }}" method="post" enctype="multipart/form-data" autocomplete="off">
     @csrf
-    @if($formUrl == "/dashboard/candidates/$userId" || 
-        $formUrl == "/dashboard/managers/$userId" || 
-        $formUrl == "/dashboard/voters/$userId"
-        )
+    @if($candidate != "")
         @method("PATCH")
     @endif
     <div class="create_new_user_form">
@@ -22,10 +19,10 @@
                 <h3>Party Info</h3>
                 <div class="input_group long_box party_selection">
                     <label for="cand_party">Candidate Party</label>
-                    <select name="party" id="party">
-                        <option value="1" {{ $party_id=='1'? "selected" :"" }}>Green Party</option>
-                        <option value="2" {{ $party_id=='2'? "selected" :"" }}>LB Party</option>
-                        <option value="3" {{ $party_id=='3'? "selected" :"" }}>NoOnes Party</option>
+                    <select name="party" id="party" onchange="handleChangedParty(this)">
+                        @foreach($parties as $party)
+                            <option value="{{ $party->party_id  }}" data-image="{{ $party->symbol }}" {{ $party_id==$party->party_id ? "selected" :"" }}>{{ $party->party_name }}</option>
+                        @endforeach
                     </select>
                 </div>
                 <div class="party_logo">

@@ -1,7 +1,5 @@
 :root {
     --dashblue:#064161;
-    --danger:#d9534f;
-    --success:#27a745;
     --warning:#ffc107;
 }
 input:disabled{
@@ -451,9 +449,6 @@ input:disabled{
 .error {
     background-color: var(--danger);
 }
-
-
-
 
 
   /**************************

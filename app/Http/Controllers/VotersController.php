@@ -69,7 +69,7 @@ class VotersController extends Controller
 
         $voter->save();
 
-        return redirect("/dashboard/voters")->with("message","New voter registered successfully");
+        return redirect("/dashboard/voters")->with("message",["status"=>"success","message"=>"New voter registered successfully"]);
     }
 
     public function import(Request $request)

@@ -59,6 +59,22 @@
             reader.readAsDataURL(this.files[0]);
         });
     }
+
+    function handleChangedParty(event){
+        const selected_id = event.value;
+        const selected = Array.from(event.querySelectorAll('option')).find(option => option.value === `${selected_id}`);
+        const image_holder = document.querySelector(".party_info .party_logo img")
+        image_holder.setAttribute("src", selected.getAttribute("data-image"));
+    }
+
+    function triggerLogout(){
+        const logoutCard = document.querySelector(".absolute_card");
+
+        if(logoutCard.classList.contains("show_absolute_card"))
+            logoutCard.classList.remove("show_absolute_card");
+        else
+            logoutCard.classList.add("show_absolute_card");
+    }
     
     </script>
 </body>
