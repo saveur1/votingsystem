@@ -701,21 +701,27 @@ a {
     height:458px;
     overflow:hidden;
     transition: all 0.5s ease-in-out;
+    position:relative;
+    z-index:10;
 }
 #voter_dashboard .voting_card:first-child {
     margin-top:15px;
 }
 
 #voter_dashboard .voting_card.active {
-    border:5px solid var(--blue);
+    border:2px solid var(--blue);
 }
 #voter_dashboard .voting_card .card_header{
-    padding:10px 20px;
+    padding:20px 20px;
     display:flex;
     justify-content: space-between;
     align-items: center;
     border-bottom:1px solid var(--lwhite);
-    height:80px;
+    height:90px;
+    overflow:hidden;
+    position: relative;
+    background-color: var(--white);
+    z-index:20;
 }
 .fold_card {
     height:80px !important;
@@ -724,6 +730,7 @@ a {
     padding:5px 20px;
     display:flex;
     align-items: center;
+    width: 50%;
 }
 #voter_dashboard .voting_card .card_header .party_candidate img{
     width:70px;
@@ -754,7 +761,9 @@ a {
     align-items: center;
     padding:20px;
     background-color: var(--lwhite);
-    height: calc(100% - 80px);
+    height: calc(100% - 90px);
+    position: relative;
+    z-index: 15;
 }
 #voter_dashboard .voting_card .card_body .image{
     width:300px;

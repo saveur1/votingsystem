@@ -49,7 +49,7 @@
                 <div class="card_footer">
                     <div class="checkbox">
                         <input type="checkbox" name="voted_candidate" />
-                        <h3>I have selected to vote for Mr Kananura</h3>
+                        <h3>I have selected to vote for Nsenga Queen Milleraire</h3>
                     </div>
                     <input type="submit" name="vote_now" value="SUBMIT" class="info_btn"/>
                 </div> 

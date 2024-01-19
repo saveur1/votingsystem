@@ -47,11 +47,11 @@
     var options = {
         series: [
         {
-        name: "Joe Doe",
+        name: "John",
         data: [28, 29, 33, 36, 32, 32, 33]
         },
         {
-        name: "Jean Don Dieux",
+        name: "Peter",
         data: [12, 11, 14, 18, 17, 13, 13]
         }
     ],
