@@ -31,8 +31,12 @@ When it comes to democratic processes the traditional paper-based voting techniq
 
 ## Screenshots
 These are are screenshots that shows fully running project in two users: Voters and Admin
+##### Notes
+```
+    Note that we have only included screenshots for candidates dashbaord only to indicate how other like page looks like. The other looks like pages are Management Team, Voters, Elections and Parties. What make them have the same looks is that they includes CRUD operation, and may have the same shared components.
+```
 ### Landing Page
-<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Landing%20Page.png" width="400" alt="Landing Page Screenshoot"></p>
+![App Screenshot](https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Landing%20Page.png)
 <p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Login.png" width="400" alt="Landing Page Screenshoot"></p>
 <p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Signup.png" width="400" alt="Landing Page Screenshoot"></p>
 
