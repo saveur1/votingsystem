@@ -37,31 +37,30 @@ These are are screenshots that shows fully running project in two users: Voters 
 ```
 ### Landing Page
 ![App Screenshot](https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Landing%20Page.png)
-<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Login.png" width="400" alt="Landing Page Screenshoot"></p>
-<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Signup.png" width="400" alt="Landing Page Screenshoot"></p>
+![App Screenshot](https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Login.png)
+![App Screenshot](https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Signup.png)
 
 ### Voters
 #### Profile
-<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Landing%20Page.png" width="400" alt="Voter Profile Screenshoot"></p>
+![App Screenshot](https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Landing%20Page.png)
 
 #### Elections
-<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Landing%20Page.png" width="400" alt="Elections History Screenshoot"></p>
+![App Screenshot](https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/ElectionsVoters.png)
 
 #### Voting Panel
-<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/VotingPanel.png" width="400" alt="Voting Panel Screenshoot"></p>
-<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Voting%20Page.png" width="400" alt="Voting Panel Screenshoot"></p>
-<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/SuccesfullyVoted.png" width="400" alt="Successfully Voted Screenshoot"></p>
+![App Screenshot](https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/VotingPanel.png)
+![App Screenshot](https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Voting%20Page.png)
+![App Screenshot](https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/SuccesfullyVoted.png)
 
 ### Admin
 #### Dashboard
-<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/dashboard.png" width="400" alt="Dashboard Screenshoot"></p>
+![App Screenshot](https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/dashboard.png)
 
 #### Candidates
-<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Candidates%20Dashboard.png" width="400" alt="Candidate Page Screenshoot"></p>
-
-<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Edit_Candidates.png" width="400" alt="Voting Panel Screenshoot"></p>
-<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/DeleteUser.png" width="400" alt="Voting Panel Screenshoot"></p>
-<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/ViewUser.png" width="400" alt="Voting Panel Screenshoot"></p>
+![App Screenshot](https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Candidates%20Dashboard.png)
+![App Screenshot](https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Edit_Candidates.png)
+![App Screenshot](https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/DeleteUser.png)
+![App Screenshot](https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/ViewUser.png)
 
 ## Conclusion
 Online Voting Systems have many advantages over the traditional voting system. Some of these advantages are less cost, faster generation results, easy accessibility, accuracy, and low risk of human and mechanical errors. It is very difficult to develop online voting system which can allow security and privacy on the high level. As technology continues to advance, embracing online voting can be a progressive step towards fostering a modern and inclusive democracy that truly reflects the diverse voices of the electorate.
