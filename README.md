@@ -32,4 +32,32 @@ When it comes to democratic processes the traditional paper-based voting techniq
 ## Screenshots
 These are are screenshots that shows fully running project in two users: Voters and Admin
 ### Landing Page
-<p align="center"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></p>
+<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Landing%20Page.png" width="400" alt="Landing Page Screenshoot"></p>
+<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Login.png" width="400" alt="Landing Page Screenshoot"></p>
+<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Signup.png" width="400" alt="Landing Page Screenshoot"></p>
+
+### Voters
+#### Profile
+<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Landing%20Page.png" width="400" alt="Voter Profile Screenshoot"></p>
+
+#### Elections
+<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Landing%20Page.png" width="400" alt="Elections History Screenshoot"></p>
+
+#### Voting Panel
+<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/VotingPanel.png" width="400" alt="Voting Panel Screenshoot"></p>
+<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Voting%20Page.png" width="400" alt="Voting Panel Screenshoot"></p>
+<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/SuccesfullyVoted.png" width="400" alt="Successfully Voted Screenshoot"></p>
+
+### Admin
+#### Dashboard
+<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/dashboard.png" width="400" alt="Dashboard Screenshoot"></p>
+
+#### Candidates
+<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Candidates%20Dashboard.png" width="400" alt="Candidate Page Screenshoot"></p>
+
+<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Edit_Candidates.png" width="400" alt="Voting Panel Screenshoot"></p>
+<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/DeleteUser.png" width="400" alt="Voting Panel Screenshoot"></p>
+<p align="center"><img src="https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/ViewUser.png" width="400" alt="Voting Panel Screenshoot"></p>
+
+## Conclusion
+Online Voting Systems have many advantages over the traditional voting system. Some of these advantages are less cost, faster generation results, easy accessibility, accuracy, and low risk of human and mechanical errors. It is very difficult to develop online voting system which can allow security and privacy on the high level. As technology continues to advance, embracing online voting can be a progressive step towards fostering a modern and inclusive democracy that truly reflects the diverse voices of the electorate.
