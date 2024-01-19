@@ -42,7 +42,7 @@ These are are screenshots that shows fully running project in two users: Voters 
 
 ### Voters
 #### Profile
-![App Screenshot](https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Landing%20Page.png)
+![App Screenshot](https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/Voters%20HomePage.png)
 
 #### Elections
 ![App Screenshot](https://github.com/saveur1/votingsystem/blob/main/public/screenshoots/ElectionsVoters.png)
